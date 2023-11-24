@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://img.game8.co/3290050/73211100242437cc2e00927d07e90e79.png/show">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaporizados</title>
+</head>
+<script type="text/javascript" src="codex.js"></script>
+<style>
+body{
+    background-color: gray;
+    background-image: url(https://i.pinimg.com/736x/e4/3f/f9/e43ff9ab5155c2c6d62c50b681f5367e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+}
+nav{
+    background-color: rgb(255, 56, 6);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:100%;
+    left: 0;
+    border-bottom:5px solid rgb(0, 0, 0);
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: aliceblue;
+}
+#contper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+}
+.personaje{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+main{
+    margin-top: 11%;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease-in-out;
+}
+.extra{
+    width: 1850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.personaje img{
+    width: 900px;
+    border: 6px solid rgba(0, 0, 0, 0.541);
+    border-radius: 15px;
+}
+.funcionpersonaje{
+    background-color: rgba(255, 145, 0, 0.438);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(100, 0, 0);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#funcion{
+    background-color: rgba(255, 145, 0, 0.438);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(100, 0, 0);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#variables{
+    background-color: rgba(255, 145, 0, 0.438);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(100, 0, 0);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boton{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 3%;
+}
+.furina{
+    width: 1400px;
+    margin: 1%;
+    border: 5px solid rgba(0, 0, 0, 0.514);
+    border-radius: 15px;
+}
+.chiquito{
+    width: auto;
+}
+</style>
+<body>
+  <nav>
+    <br>
+    <h1><a href="index.html" class="boton" class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Volver a los equipos</a></h1>
+    <h1><a href="#contper" class="boton" class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Personajes</a></h1>
+    <h1><a href="#funcion" class="boton" class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Como funciona</a></h1>
+    <h1><a href="#variables" class="boton" class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Variantes</a></h1>
+    <br>
+  </nav>
+<main>
+  <div class="extra">
+    <h2>Estos son los personajes que yo uso en el equipo junto a como lo tengo armado(artefactos, arma y nvl de talentos):</h2>
+    <div id="contper">
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Naganohara Yoimiya</h3>
+            <h4>Rol: Main DPS</h4>
+            <img src="../imagenes/Yoimiya.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Xinqiu</h3>
+            <h4>Rol: Sub DPS</h4>
+            <img src="../imagenes/Xinqiu.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Bennet</h3>
+            <h4>Rol: Sub DPS/Soporte</h4>
+            <img src="../imagenes/Bennet.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Barbara</h3>
+            <h4>Rol: Sanador/buffer</h4>
+            <img src="../imagenes/Barbara.png">
+        </div>
+    </div>
+  <div class="funcionpersonaje">
+    <h1 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Primero me gustaria explicar lo que serian las armas, los artefacto, los talentos y las constelaciones</h1>
+    <h2>Las armas son lo que va a usar el personaje todo el tiempo, hay 5 tipos: Espada ligera, Mandoble, Arco, Lanza y Catalizador.</h2>
+    <h2>Las armas pueden dar atributos especiales como: Probabilidad de critico, Daño critico, Maestria Elemental, Recarga de energia o mas ataque y tienen efectos especiales variados pero se tienen que cumplir condiciones que aunque son medianamente basicas, es estrictamente necesaria cumplirlas</h2>
+    <h2>Artefactos: es equipamiento que da un bono extra si se equipa al personaje con 2/4 piezas de cierto conjunto</h2>
+    <h2>En todos los conjuntos de artefactos hay: una flor de vida, una pluma de ataque, unas arenas del reloj, caliz de enteoheim y una tiara de logros</h2>
+    <h2>NOTA: NO SE EL PORQUE SE LE PUSIERON ESOS NOMBRES</h4>
+    <h2>Talentos: estos se dividen en 2 talentos pasivos y activos.</h2>
+    <h2>Los talentos activos son las habilidades que se van a usar constantemente en batalla o incluso fuera de ella, a su vez se clasifican por: Ataque Básico, Habilidad Elemental y Habilidad Definitiva, esta ultima se carga con energia elemental y cada personaje necesita cierta cantidad de energia</h2>
+    <h2>Los talentos pasivos son actividades que se activan de forma escondida mientras se cumplan ciertas condiciones o se hagan ciertas acciones,aunque tambien hay pasivas que se activan sin necesidad de hacer nada y/o modifican ciertas habilidades activas</h2>
+    <h2>Constelaciones: estas son mejoras directas a las habilidades o a como funcionan los personajes, a veces modifican las habilidades o dan bonos al cumplirse ciertas condiciones basicas o faciles de cumplir</h2>
+  </div>
+  <div class="funcionpersonaje">
+    <h1 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Funcion de cada personaje y que significa cada rol</h1>
+    <h2 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Yoimiya: </h2><h2> Este es mi DPS principal en este equipo y aunque hay mejores DPS´s la uso a ella porque me gusta el personaje (aunque lo consegui sin querer). Cabe aclarar que no uso su habilidad definitiva, ya que consigo mas daño pyro usando su habilidad elemental ya que hace que sus ataques basicos esten imbuidos bajo el elemento pyro y hace que estos hagan mas daño mientras dure este efecto</h2>
+    <h2 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Xinqiu: </h2><h2>Debo admitir que este personaje no me gusta fuera del ambito competitivo, ya que aplica muy bien el elemento hydro gracias a su habilidad definitiva y tiene una muy buena generacion de energia elemental por lo que la habilidad definitiva se obtiene facilmente, gracias a esta gran aplicacion del elemento hydro en conjunto con la habilidad elemental de Yoimiya se genera la reaccion de vaporización, con lacual se aumenta el daño de los ataques de los elementos pyro e hydro, haciendo que yoimiya haga mas daño</h2>
+    <h2 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Bennet: </h2><h2>Un personaje que no me gusta ni me disgusta, pero su funcion es una muy buena yo lo uso como generador de energia elemental y por su habilidad definitiva que aumenta el ataque del equipo en proporcion al propio ataque de bennet (osea de si mismo) y cura en base al ataque de este ultimo mas un numero fijo en un area determinada, sumado a eso el conjunto de artefactos que le tengo equipado (4 piezas) aumenta el ataque de todos los mienmbros del equipo en un 20% (Nada que ve con el aumento que da la habilidad definitiva) al lanzar la propia habilidad definitiva</h2>
+    <h2 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Barbara: </h2><h2> El personaje que menos esta en el campo de batalla, su unica funcion es usar su habilidad elemental y si es necesario su habilidad definitiva, y luego dejar paso al DPS principal o bennet, ya que con el arma que tiene puesta aumenta en un cierto porcentaje el ataque delpersonaje que entra luego de que ella sale</h2>
+  </div>
+  <div id="funcion">
+    <h1 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Como funciona el equipo de vaporizados</h1>
+    <h2>Es realmente simple se usa la habilidad definitiva de Xinqiu cuya funcion es atacar con el personaje en batalla cuando este usa sus ataques basicos, usar la habilidad definitiva de bennet que crea el campo de potenciacion, en caso de ser necesario usar a barbara para usar su habilidad elemental y luego de ello, sacar a Yoimiya y eliminar a la mayoria de enemigos usando la habilidad elemental e inmediatamente atacar con basicos</h2>
+    <h2>Gracias a esto se aplica pyro (Basicos de yoimiya luego de la habilidad elemental) e hydro (Habilidad definitiva de xinqiu), creandose la reaccion de vaporizado (esto es lo que le da el nombre al equipo) y aumentando el daño en base a la Maestria elemental de Xinqiu, porque el golpe que desencadena la reaccion es el de la habilidad definitva de este mismo</h2>
+    <h2>Una contra muy fuerte de este equipo es que es unica y exclivamente unitarget, osea que solo se puede enfocar a un enemigo a la vez, pero en lo personal me gusta jugar con yoimiya aunque no sea optimo</h2>
+    <h2>Hay que decir que al tener 2 personajes del elemento pyro y 2 personajes del elemento hydro se consiguen las consonancias elementales de estos que dan un 25% mas de ataque (doble pyro) y 25% mas de vida(doble hydro)</h2>
+    
+</div>
+  <div id="variables">
+    <h1 class="enlace" onmouseover="porencima(this)" onmouseout="alquitar(this)">Posibles variable del equipo</h1>
+    <h2>Main DPS: Hutao (No la tengo), Yanfei, Xiangling e incluso Diluc puede cumplir una mejor funcion o una buena funcion y atacar en area que es lo que no puede hacer yoimiya,optimizando el daño y haciendo todo mas rapido</h2>
+    <h2>Sub DPS: Yelan seria un buen reemplazo de Xinqiu aunque porque no usar los 2 juntos en un mismo equipo, tambien Furina podria funcionar bien</h2>
+    <h2>Soporte: No recomiendo cambiar a Bennet ya que aporta curacion y un aumento en el ataque de los aliados, seguramente Barbara esta de mas o se podria cambiar para mejorar mucho el daño, por algun personaje que junte a los enemigos como kazuha (No lo tengo), Venti(No lo tengo) o Sacarosa, pero en lo personal no la quito porque me aporta mucha curacion, de igual manera furina puede curar y podria funcionar pero sus mecanicas son un tanto arriesgadas de jugar sin un buen sanador</h2>
+    <h2>Si se quiere usar a yoimiya una variable podria ser: Yoimiya/Main DPS, Xinqiu/Sub DPS, Yelan/Sub DPS, Bennet/Soporte</h2>
+    <h2>Si NO se quiere usar a yoimiya la variabilidad cambia mucho: Hutao u Yanfei/Main DPS, Yelan/Sub DPS, Xinqiu o Kazuha/Buffer, Bennet/Soporte</h2>
+    <h2>Como se puede ver este equipo es mas flexible en los personajes que usar, sin embargo muchos de ellos no los tengo, por lo que uso lo que tengo que es relativamente poco</h2>
+  </div>
+  <div class="funcionpersonaje">
+    <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Furina</h1>
+    <h2>Rol: Sub DPS/Sanador/Tanque/Buffer</h2>
+    <center><img class="furina" src="../imagenes/Furina.png"></center>
+    <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Nuevob personaje añadido a los equipos</h1>
+    <h3>Recientemente (Día 07/11/2023) se ha actualizado el juego con lo cual se han añadido 2 personajes: Charlotte y Furina, que es de quien estaremos hablando en esta parte de la pagina</h3>
+    <h2>Estan viendo en la imagen el personaje de Furina el cual saque y subi a niveles optimos o decentes y esto lo estoy escribiendo 1 semana despues</h2>
+    <h2>Esta señorita del elemento Hydro es muy buena ya que tiene mas 3 mecanicas en sus habilidades las cuales explicare a continuacion</h2>
+    <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">La posibilidad de ser un gran Sub DPS</h1>
+    <h3>y esto a su vez le proporciona ser un personaje tanque o con mucha vida y recalco. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">MUCHA VIDA</b>. como se puede observar, aparte de su primera constelación, mi Furina tiene (casi) 40,000 de vida sin necesidad de que todos los artefactos que tiene esten a nivel maximo, esto se hace ya que su daño de sus habilidades e invocaciones es en base a su vida maxima (Esto no incluye el daño de sus ataques basicos, estos solo se suben cuando se tiene su constelación N°6)</h2>
+    <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Ser una gran sanadora</h1>
+    <h3>Esto ya que su sanacion de la invocacion que hace es tambien en base a su vida de forma que, cuanta mas vida tiene mas daño y sanacion va a hacer</h3>
+    <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">ser un potenciador en equipos armados para aprovecharla</h1>
+    <h3>En este caso consideramos su Habilidad Definitiva ya que con esta acumula puntos de algarabia que aumentan el daño infligido en un porcentaje menor a 0 (aproximadamente 0,18%) y el bono de sanacion recibida en un procentaje menor al anterior (aproximadamente 0,09%) cada punto por separado, lo cual es bajo si pero considerando que el maximo de puntos (sin constelaciones) es de 300 puntos de algarabia se puede convertir en un porcentaje mayor. Estos puntos se consiguen cuando un integrante del equipo se cura o cuando lo dañan.</h3>
+    <h2>Lastimosamente este personaje maneja una mecanica muy compleja o arriesgada que obliga de cierta forma a usar otro Sanador. Esto pasa ya que las invocaciones que hacen daño de su habilidad elemental infligiran mas daño cuanta mas vida le "quiten" a los aliados, ya que cada vez que atacan bajan la vida de los aliados hasta un maximo del 50% de la vida maxima, esto ayuda a infligir mas daño, a conseguir mas puntos de algarabia y (si se tiene la constelación N°2) ayuda a que Furina gane mas vida maxima</h2>
+    <h2>Por esto considero que en rangos bajos o en jugadores medianamente nuevos no se recomienda ya que van a tener menos vida a la hora de luchar, o esta misma va a ser reducida mucho mas rapido pero. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Si es un personaje muy bueno y completo</b></h2>
+    <h2>Fuera de estos motivos "Tecnicos" o "Mecanicos", el diseño del personaje en si me gusto desde la primera vez que lo vi y hice todo lo posible para poder subirla a un nivel "Decente" y proximamente subire todos sus artefactos e intentare conseguirle mejores y/o la subire a nivel 90, un solo personaje subi a ese nivel y ese es <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Kamisato Ayaka</b></h2>
+    <center><img class="chiquito" src="../imagenes/furinachibi.png" alt="Furina chiquita"></center>
+</div>
+</div>
+</main>
+</body>
+</html>

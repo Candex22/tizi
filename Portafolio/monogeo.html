@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://img.game8.co/3320681/38138954452bee60aa0badc68636b5aa.png/show">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monogeo</title>
+</head>
+<script type="text/javascript" src="codex.js"></script>
+<style>
+body{
+    background-color: rgb(122, 122, 122);
+    background-image: url(https://i.redd.it/vwmosvays6661.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+}
+nav{
+    background-color: rgb(128, 77, 0);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:100%;
+    left: 0;
+    border-bottom:5px solid rgb(0, 0, 0);
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: aliceblue;
+}
+#contper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+}
+.personaje{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+main{
+    margin-top: 11%;
+}
+.extra{
+    width: 1850px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.personaje img{
+    width: 900px;
+    border: 6px solid rgba(0, 0, 0, 0.541);
+    border-radius: 15px;
+}
+.funcionpersonaje{
+    background-color: rgba(255, 153, 0, 0.699);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(116, 0, 161);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#funcion{
+    background-color: rgba(255, 153, 0, 0.699);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(116, 0, 161);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease-in-out;
+}
+#variables{
+    background-color: rgba(255, 153, 0, 0.699);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgb(116, 0, 161);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boton{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 3%;
+}
+.furina{
+    width: 1400px;
+    margin: 1%;
+    border: 5px solid rgba(0, 0, 0, 0.514);
+    border-radius: 15px;
+}
+.chiquito{
+    width: auto;
+}
+</style>
+<body>
+    <nav>
+        <br>
+        <h1><a href="index.html" class="boton" class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Volver a los equipos</a></h1>
+        <h1><a href="#contper" class="boton" class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Personajes</a></h1>
+        <h1><a href="#funcion" class="boton" class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Como funciona</a></h1>
+        <h1><a href="#variables" class="boton" class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Variantes</a></h1>
+        <br>
+    </nav>
+<main>
+<div class="extra">
+    <h2>Estos son los personajes que yo uso en el equipo junto a como lo tengo armado(artefactos, arma y nvl de talentos):</h2>
+    <div id="contper">
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Noelle</h3>
+            <h4>Rol: Main DPS/Carry</h4>
+            <img src="../imagenes/Noelle.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Albedo</h3>
+            <h4>Rol: Sub DPS/Energia</h4>
+            <img src="../imagenes/Albedo.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Gorou</h3> 
+            <h4>Rol: Soporte/buffer</h4>
+            <img src="../imagenes/Gorou.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Razor</h3>
+            <h4>Rol: Sub Carry/Romper escudos elementales</h4>
+            <img src="../imagenes/Razor.png">
+        </div>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Primero me gustaria explicar lo que serian las armas, los artefacto, los talentos y las constelaciones</h1>
+        <h2>Las armas son lo que va a usar el personaje todo el tiempo, hay 5 tipos: Espada ligera, Mandoble, Arco, Lanza y Catalizador.</h2>
+        <h2>Las armas pueden dar atributos especiales como: Probabilidad de critico, Daño critico, Maestria Elemental, Recarga de energia o mas ataque y tienen efectos especiales variados pero se tienen que cumplir condiciones que aunque son medianamente basicas, es estrictamente necesaria cumplirlas</h2>
+        <h1>Primero me gustaria explicar lo que serian los artefacto, los talentos y las constelaciones</h1>
+        <h2>Artefactos: es equipamiento que da un bono extra si se equipa al personaje con 2/4 piezas de cierto conjunto</h2>
+        <h2>En todos los conjuntos de artefactos hay: una flor de vida, una pluma de ataque, unas arenas del reloj, caliz de enteoheim y una tiara de logros</h2>
+        <h2>NOTA: NO SE EL PORQUE SE LE PUSIERON ESOS NOMBRES</h4>
+        <h2>Talentos: estos se dividen en 2 talentos pasivos y activos.</h2>
+        <h2>Los talentos activos son las habilidades que se van a usar constantemente en batalla o incluso fuera de ella, a su vez se clasifican por: Ataque Básico, Habilidad Elemental y Habilidad Definitiva, esta ultima se carga con energia elemental, LOS TALENTOS ACTIVOS SE PUEDEN SUBIR DE NIVEL HASTA NIVEL 10</h2>
+        <h2>Los talentos pasivos son actividades que se activan de forma escondida mientras se cumplan ciertas condiciones o se hagan ciertas acciones,aunque tambien hay pasivas que se activan sin necesidad de hacer nada y/o modifican ciertas habilidades activas. LOS TALENTOS PASIVOS NO PUEDEN SUBIRSE DE NIVEL</h2>
+        <h2>Constelaciones: estas son mejoras directas a las habilidades o a como funcionan los personajes, a veces modifican las habilidades o dan bonos al cumplirse ciertas condiciones basicas o faciles de cumplir</h2>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Funcion de cada personaje y que significa su rol</h1>
+        <h2 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Noelle:</h2><h2>Su funcion es clara ser el personaje que mas este en el campo aguantando los golpes con su habilidad elemental y habilidad definitiva, ya que esta puede curar si es que ataca mientras tiene el escudo de su habilidad elemental activo y gracias a su potencial de daño de su habilidad definitiva (Aumenta su ataque en base a su defensa) es una buena opcion para infligir un considerable daño al enemigo</h2>
+        <h2 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Albedo:</h2><h2>Personalmente el personaje al principio no me llamaba la atencion pero luego de ultilizarlo un poco, ver su mecanica y su potencial de daño me decidi a armar el equipo entero o el llamado monogeo y que me permite usar a este personaje de manera optima, este personaje se usa de manera que su daño se hace basado en la defensa y con su habilidad elemental, que crea una especie de flor que cuando atacan a un enemigo en un rango determinado la flor lo atacara infligiendo daño basado en la defensa de albedo</h2>
+        <h2 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Gorou:</h2><h2>Este personaje es la pieza principal del equipo ya que da mucho incremento de daño en el equipo con sus habilidades</h2>
+        <h2 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Razor:</h2><h2>Este personaje lo pongo aca para no repetir personajes y en forma de emergencia en caso de que no tenga alguno de los otros personajes vivo, en condiciones de salir al campo de batalla o para romper escudos tanto elementales como escudos del elemento geo (ya que estos se recomienda usar un personaje con mandoble), aparte el personaje de cierta manera puede ser autosuficiente en cuestion de daño ya que esta centrado en daño fisico que no depende de ninguna habilidad y solo depende del ataque y el bono de daño fisico que tenga el personaje</h2>
+    </div>
+    <div id="funcion">
+        <h1 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Como funciona el equipo Monogeo</h1>
+        <h2>Consiste en aguantar y usar las habilidades definitivas del carry(Noelle en este caso) y de gorou, en caso de que se tenga alguien mas que pueda hacer daño, dar incrementos de estadisticas o daño se use tambien esa habilidad definitiva, aprovechando que noelle cura se ahorra el espacio de sanador.</h2>
+        <h2>El daño mas notable sera el de albedo ya que con su habilidad elemental puede hacer cantidades muy buenas de daño y generar bastante energia</h2>
+        <h2>Personalmente me parece un equipo muy facil de armar ya que no requiere mucha "Inversion" en artefactos para llegar a un daño decente y constante. Aparte de que me permite usar un personaje que me gusta bastante y que en otros equipos no encaja por su poca flexibilidad en cuestion de esto ultimo que seria Albedo</h2>
+        <center><img class="chiquito" src="../imagenes/albedochibi.png" alt="Albedo chiquito"></center> 
+    </div>
+    <div id="variables">
+        <h1 class="enlace" onmouseover="porencima3(this)" onmouseout="alquitar(this)">Las posibles variables del equipo</h1>
+        <h2>En el termino de Main DPS solo hay otro personaje que puede cumplir este rol y es arataki itto que es un personaje que me gustaria tener ya que el diseño me gusta bastante, albedo no se deberia reemplazar y en caso de no tenerlo se deberia usar a bennet para incrementar el daño o el ataque de los aliados, por lo que el sub DPS no se deberia cambiar</h2>
+        <h2>Gorou es la pieza clave del equipo. NO GOROU NO MONOGEO. Por lo que no se cambia</h2>
+        <h2>En el cuarto personaje enrealidad hay una gran variedad pero se recomienda un Zhongli (No lo tengo) o yun jing, de otra forma alguien que incremente la defensa o el daño del equipo u en todo caso que genere energia o cure al equipo por decir ejemplos: bennet, fischl o sayu funcionarian</h2>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Furina</h1>
+        <h2>Rol: Sub DPS/Sanador/Tanque/Buffer</h2>
+        <center><img class="furina" src="../imagenes/Furina.png"></center>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Nuevo personaje añadido a los equipos</h1>
+        <h3>Recientemente (Día 07/11/2023) se ha actualizado el juego con lo cual se han añadido 2 personajes: Charlotte y Furina, que es de quien estaremos hablando en esta parte de la pagina</h3>
+        <h2>Estan viendo en la imagen el personaje de Furina el cual saque y subi a niveles optimos o decentes y esto lo estoy escribiendo 1 semana despues</h2>
+        <h2>Esta señorita del elemento Hydro es muy buena ya que tiene mas 3 mecanicas en sus habilidades las cuales explicare a continuacion</h2>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">La posibilidad de ser un gran Sub DPS</h1>
+        <h3>y esto a su vez le proporciona ser un personaje tanque o con mucha vida y recalco. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">MUCHA VIDA</b>. como se puede observar, aparte de su primera constelación, mi Furina tiene (casi) 40,000 de vida sin necesidad de que todos los artefactos que tiene esten a nivel maximo, esto se hace ya que su daño de sus habilidades e invocaciones es en base a su vida maxima (Esto no incluye el daño de sus ataques basicos, estos solo se suben cuando se tiene su constelación N°6)</h2>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Ser una gran sanadora</h1>
+        <h3>Esto ya que su sanacion de la invocacion que hace es tambien en base a su vida de forma que, cuanta mas vida tiene mas daño y sanacion va a hacer</h3>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">ser un potenciador en equipos armados para aprovecharla</h1>
+        <h3>En este caso consideramos su Habilidad Definitiva ya que con esta acumula puntos de algarabia que aumentan el daño infligido en un porcentaje menor a 0 (aproximadamente 0,18%) y el bono de sanacion recibida en un procentaje menor al anterior (aproximadamente 0,09%) cada punto por separado, lo cual es bajo si pero considerando que el maximo de puntos (sin constelaciones) es de 300 puntos de algarabia se puede convertir en un porcentaje mayor. Estos puntos se consiguen cuando un integrante del equipo se cura o cuando lo dañan.</h3>
+        <h2>Lastimosamente este personaje maneja una mecanica muy compleja o arriesgada que obliga de cierta forma a usar otro Sanador. Esto pasa ya que las invocaciones que hacen daño de su habilidad elemental infligiran mas daño cuanta mas vida le "quiten" a los aliados, ya que cada vez que atacan bajan la vida de los aliados hasta un maximo del 50% de la vida maxima, esto ayuda a infligir mas daño, a conseguir mas puntos de algarabia y (si se tiene la constelación N°2) ayuda a que Furina gane mas vida maxima</h2>
+        <h2>Por esto considero que en rangos bajos o en jugadores medianamente nuevos no se recomienda ya que van a tener menos vida a la hora de luchar, o esta misma va a ser reducida mucho mas rapido pero. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Si es un personaje muy bueno y completo</b></h2>
+        <h2>Fuera de estos motivos "Tecnicos" o "Mecanicos", el diseño del personaje en si me gusto desde la primera vez que lo vi y hice todo lo posible para poder subirla a un nivel "Decente" y proximamente subire todos sus artefactos e intentare conseguirle mejores y/o la subire a nivel 90, un solo personaje subi a ese nivel y ese es <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Kamisato Ayaka</b></h2>
+        <center><img class="chiquito" src="../imagenes/furinachibi.png" alt="Furina chiquita"></center>
+    </div>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://img.game8.co/3313079/45778fd49d63ed897695baa2688a6f8c.png/show">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERMAFROST</title>
+</head>
+<script type="text/javascript" src="codex.js"></script>
+<style>
+  body{
+    background-color: gray;
+    background-image: url(https://live.staticflickr.com/65535/50703862411_785818095d_k.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Work Sans', sans-serif;
+  }
+  nav{
+    background-color: rgb(0, 217, 255);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width:100%;
+    left: 0;
+    border-bottom:5px solid rgb(0, 0, 0);
+}
+h1, h2, h3, h4, h5, h6{
+    color: aliceblue;
+    text-align: center;
+}
+#contper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+}
+.personaje{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease-in-out;
+}
+main{
+    margin-top: 11%;
+}
+.extra{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+.personaje img{
+    width: 900px;
+    border: 6px solid rgba(0, 0, 0, 0.541);
+    border-radius: 15px;
+}
+.funcionpersonaje{
+    background-color: rgba(0, 119, 255, 0.658);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#funcion{
+    background-color: rgba(0, 119, 255, 0.658);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#variables{
+    background-color: rgba(0, 119, 255, 0.658);
+    padding: 15px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boton{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 3%;
+}
+.furina{
+    width: 1400px;
+    margin: 1%;
+    border: 5px solid rgba(0, 0, 0, 0.514);
+    border-radius: 15px;
+}
+.chiquito{
+    width: auto;
+}
+</style>
+<body>
+    <nav>
+        <br>
+        <h1><a href="index.html" class="boton" class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Volver a los equipos</a></h1>
+        <h1><a href="#contper" class="boton" class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Personajes</a></h1>
+        <h1><a href="#funcion" class="boton" class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Como funciona</a></h1>
+        <h1><a href="#variables" class="boton" class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Variantes</a></h1>
+        <br>
+    </nav>    
+<main>
+<div class="extra">
+    <h2>Estos son los personajes que yo uso en el equipo junto a como lo tengo armado(artefactos, arma y nvl de talentos):</h2>
+    <div id="contper">
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Kamisato Ayaka</h3>
+            <h4>Rol: Main DPS/Carry</h4>
+            <img src="../imagenes/Kamisato-ayaka.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Mona</h3>
+            <h4>Rol: Sub DPS/buffer</h4>
+            <img src="../imagenes/Mona.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Sacarosa/Sucrose</h3>
+            <h4>Rol: Soporte/buffer</h4>
+            <img src="../imagenes/Sucrose.png">
+        </div>
+        <div class="personaje">
+            <h3 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Qiqi</h3>
+            <h4>Rol: Sanador/Tanque</h4>
+            <img src="../imagenes/qiqi.png">
+        </div>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Primero me gustaria explicar lo que serian las armas, los artefacto, los talentos y las constelaciones</h1>
+        <h2>Las armas son lo que va a usar el personaje todo el tiempo, hay 5 tipos: Espada ligera, Mandoble, Arco, Lanza y Catalizador.</h2>
+        <h2>Las armas pueden dar atributos especiales como: Probabilidad de critico, Daño critico, Maestria Elemental, Recarga de energia o mas ataque y tienen efectos especiales variados pero se tienen que cumplir condiciones que aunque son medianamente basicas, es estrictamente necesaria cumplirlas</h2>
+        <h1>Primero me gustaria explicar lo que serian los artefacto, los talentos y las constelaciones</h1>
+        <h2>Artefactos: es equipamiento que da un bono extra si se equipa al personaje con 2/4 piezas de cierto conjunto</h2>
+        <h2>En todos los conjuntos de artefactos hay: una flor de vida, una pluma de ataque, unas arenas del reloj, caliz de enteoheim y una tiara de logros</h2>
+        <h2>NOTA: NO SE EL PORQUE SE LE PUSIERON ESOS NOMBRES</h4>
+        <h2>Talentos: estos se dividen en 2 talentos pasivos y activos.</h2>
+        <h2>Los talentos activos son las habilidades que se van a usar constantemente en batalla o incluso fuera de ella, a su vez se clasifican por: Ataque Básico, Habilidad Elemental y Habilidad Definitiva, esta ultima se carga con energia elemental, LOS TALENTOS ACTIVOS SE PUEDEN SUBIR DE NIVEL HASTA NIVEL 10</h2>
+        <h2>Los talentos pasivos son actividades que se activan de forma escondida mientras se cumplan ciertas condiciones o se hagan ciertas acciones,aunque tambien hay pasivas que se activan sin necesidad de hacer nada y/o modifican ciertas habilidades activas. LOS TALENTOS PASIVOS NO PUEDEN SUBIRSE DE NIVEL</h2>
+        <h2>Constelaciones: estas son mejoras directas a las habilidades o a como funcionan los personajes, a veces modifican las habilidades o dan bonos al cumplirse ciertas condiciones basicas o faciles de cumplir</h2>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Funcion de cada personaje y que significa cada rol</h1>
+        <h2 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Kamisato Ayaka: </h2><h2> Es el personaje principal que hace daño (por eso main DPS;daño por segundo), va a ser el personaje que mas este en el campo de batalla por su gran capacidad de daño (Por esto carry;osea que este personaje esta mucho tiempo en el campo), los artefactos que le tengo equipados me dan la capacidad de hacer muchos ataque criticos aunque no esta asegurado en las estadisticas los bonos de las 4 piezas de artefacto me dan un 40 extra de probabilidad de critico, Ayaka la uso mucho con los ataques basicos por lo que estos son mi "prioridad" a la hora de subir los talentos</h2>
+        <h2 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Mona: </h2><h2> Ayuda en la composición aportando energia elemental y/o aplicando elelemnto hydro a los enemigos, con su habilidad definitiva hace que los enemigos reciban mas daño durante un cierto tiempo </h2>
+        <h2 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Sacarosa/Sucrose: </h2><h2>Junta a los enemigos con su habilidades elementales y definitiva haciendo que sea mas facil eliminar mas enemigos rapidamente, esto hace que con el conjunto que tiene equipado baje la resistencia elemental si es que causa una reaccion llamada "TORBELLINO" en conjunto con otro elemento (por ejemplo hydro), aparte de eso es buena generando energia elemental</h2>
+        <h2 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Qiqi: </h2><h2>Es una sanadora que me gusta usar ya que me permite usar los personajes de una forma muy agresiva, con su habilidad definitiva hace daño y les pone un talisman a los enemigos,cuando un aliado ataca a el enemigo con el talisman, se cura una cantidad fija + un porcentaje del ataque de qiqi, aparte de eso cuando usa su habilidad elemental genera un orbe, este ataca al enemigo cada cierto tiempo y cura (independientemente de si daño al enemigo o no), cuando qiqi ataca y tiene el orbe ella se cura a si misma y si tiene la vida llena curara a sus aliados (todos los que le fanten vida)</h2>
+    </div>
+    <div id="funcion">
+        <h1 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Como funciona el equipo llamado "PERMAFROST"</h1>
+        <h2>El equipo Permafrost lo que hace es congelar a los enemigos (cryo+hydro) y atacarlos aprovechando ciertos bonos</h2>
+        <h2>Se usa la consonancia de 2 cryo (En este caso Ayaka y Qiqi) que da 15% de probabilidad de critico al atacar a enemigos afectados por cryo o congelados</h2>
+        <h2>Ayaka el Main DPS/Carry usa una habilidad a la hora de esprintar que la oculta y hace una especie de senda cryo, al salir los ataqu basicos de ayaka estan imbuidos en cryo, gracias a esto los enemigos la mayoria del tiempo estan afectados por cryo, de la misma manera, gracias a mona se congelan al aplicar hydro, asi que haciendo cuentas son 39,6% + 40% + 15% seria 94,6% en total de probabilidad de critico si el enemigo esta congelado. Si no esta congelado seria un 20% menos pero de igual manera es una gran probabilidad</h2>
+        <h2>Vamos a hacer algo a continuación podras ingresar un numero al azar osea el que vos quieras y le voy a sumar las bonificaciones anteriormente mencionadas de manera que puedas calcular una Probabilidad de criticos perfecta o si te excedes en este criterio</h2>
+        <h2>Ingrese la probabilidad de critico</h2>
+        <center><input type="number" id="prob" placeholder="Probabilidad critica"></center>
+        <center><button class="enviar" onclick="calculocritico()">Calcular</button></center>
+        <h4>La probabilidad critica de ayaka a enemigos congelados seria de: <span id="probfinal"></span>%.</h4>
+        <h4>Esto teniendo en cuenta de las bonificaciones maximas de las que habnlamos</h4>
+        <h2>Personalmente me gusta mucho este equipo ya que me permite usar 2 de mis personajes preferidos (Ayaka y Sucrose) y de paso conseguir mucho daño y cuidar la vida de mis personajes ya que los enemigos no me atacan por que estan congelados es una estrategia muy segura y relativamente facil de hacer</h2>
+        <center><img class="chiquito" src="../imagenes/ayakachibi.png" alt="ayaka chiquita"></center>
+    </div>
+    <div id="variables">
+        <h1 class="enlace" onmouseover="porencima2(this)" onmouseout="alquitar(this)">Las posibles variables del equipo</h1>
+        <h2>Como dps (aunque no recomiendo usar otro que no sea Kamisato Ayaka) se podria usar a Kaeya o incluso Tartaglia en una composición medio rara pero no recomiendo usar otro personaje DPS</h2>
+        <h2>Como sub DPS y/o Buffer puedo recomendar a Rosaria, Xinqiu, Furina, Shenhe (No lo tengo), Chongyun, Kazuha (No lo tengo), Barbara (Con el arma Cazador de dragones), Sayu y Venti (No lo tengo) podrian funcionar bien</h2>
+        <h2>Como Sanador recomiendo a Barbara ya que aparte de ser una buena sanadora puede cumplir un rol de buffer o potenciador (Como se especifico arriba) ya que con el arma Cazador de dragones aumenta en un 49% el ataque de nuestro personaje entrante al salir barbara (En terminos simples cuando barabra sale del campo potencia al personaje entrante) de igual manera Mona puede llevar este arma</h2>
+        <h2>Una variable del equipo que uso seria: KAMISATO AYAKA/DPS, XINQIU/SUBDPS, QIQI/SANADOR O TANQUE y BARBARA/SANADOR</h2>
+    </div>
+    <div class="funcionpersonaje">
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Furina</h1>
+        <h2>Rol: Sub DPS/Sanador/Tanque/Buffer</h2>
+        <center><img class="furina" src="../imagenes/Furina.png"></center>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Nuevo personaje añadido a los equipos</h1>
+        <h3>Recientemente (Día 07/11/2023) se ha actualizado el juego con lo cual se han añadido 2 personajes: Charlotte y Furina, que es de quien estaremos hablando en esta parte de la pagina</h3>
+        <h2>Estan viendo en la imagen el personaje de Furina el cual saque y subi a niveles optimos o decentes y esto lo estoy escribiendo 1 semana despues</h2>
+        <h2>Esta señorita del elemento Hydro es muy buena ya que tiene mas 3 mecanicas en sus habilidades las cuales explicare a continuacion</h2>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">La posibilidad de ser un gran Sub DPS</h1>
+        <h3>y esto a su vez le proporciona ser un personaje tanque o con mucha vida y recalco. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">MUCHA VIDA</b>. como se puede observar, aparte de su primera constelación, mi Furina tiene (casi) 40,000 de vida sin necesidad de que todos los artefactos que tiene esten a nivel maximo, esto se hace ya que su daño de sus habilidades e invocaciones es en base a su vida maxima (Esto no incluye el daño de sus ataques basicos, estos solo se suben cuando se tiene su constelación N°6)</h2>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Ser una gran sanadora</h1>
+        <h3>Esto ya que su sanacion de la invocacion que hace es tambien en base a su vida de forma que, cuanta mas vida tiene mas daño y sanacion va a hacer</h3>
+        <h1 class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">ser un potenciador en equipos armados para aprovecharla</h1>
+        <h3>En este caso consideramos su Habilidad Definitiva ya que con esta acumula puntos de algarabia que aumentan el daño infligido en un porcentaje menor a 0 (aproximadamente 0,18%) y el bono de sanacion recibida en un procentaje menor al anterior (aproximadamente 0,09%) cada punto por separado, lo cual es bajo si pero considerando que el maximo de puntos (sin constelaciones) es de 300 puntos de algarabia se puede convertir en un porcentaje mayor. Estos puntos se consiguen cuando un integrante del equipo se cura o cuando lo dañan.</h3>
+        <h2>Lastimosamente este personaje maneja una mecanica muy compleja o arriesgada que obliga de cierta forma a usar otro Sanador. Esto pasa ya que las invocaciones que hacen daño de su habilidad elemental infligiran mas daño cuanta mas vida le "quiten" a los aliados, ya que cada vez que atacan bajan la vida de los aliados hasta un maximo del 50% de la vida maxima, esto ayuda a infligir mas daño, a conseguir mas puntos de algarabia y (si se tiene la constelación N°2) ayuda a que Furina gane mas vida maxima</h2>
+        <h2>Por esto considero que en rangos bajos o en jugadores medianamente nuevos no se recomienda ya que van a tener menos vida a la hora de luchar, o esta misma va a ser reducida mucho mas rapido pero. <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Si es un personaje muy bueno y completo</b></h2>
+        <h2>Fuera de estos motivos "Tecnicos" o "Mecanicos", el diseño del personaje en si me gusto desde la primera vez que lo vi y hice todo lo posible para poder subirla a un nivel "Decente" y proximamente subire todos sus artefactos e intentare conseguirle mejores y/o la subire a nivel 90, un solo personaje subi a ese nivel y ese es <b class="enlace" onmouseover="porencima4(this)" onmouseout="alquitar(this)">Kamisato Ayaka</b></h2>
+        <center><img class="chiquito" src="../imagenes/furinachibi.png" alt="Furina chiquita"></center>
+    </div>
+</div>
+</main>
+</body>
+</html>
